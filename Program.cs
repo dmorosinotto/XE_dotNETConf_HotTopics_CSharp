@@ -15,7 +15,13 @@ namespace csharp9
             // csharp9.Test_TargetTypeNewExpression.Sample5.Run();
             // csharp9.Test_PatternMatch.Sample6.Run();
 
-
+            /*
+            * //RIFERIMENTI
+            * REPO CODICE ESEMPI: https://github.com/dmorosinotto/XE_dotNETConf_HotTopics_CSharp9
+            * NOTE RILASCIO C# 9: https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/
+            * DOCS WHAT'S NEW C#: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9 
+            * VIDEO FUTURE OF C#: @Mads Torgersen https://usergroup.tv/videos/the-future-of-c/
+            */
 
 
 
