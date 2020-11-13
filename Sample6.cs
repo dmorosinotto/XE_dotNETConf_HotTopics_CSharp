@@ -18,9 +18,13 @@ namespace csharp9.Test_PatternMatch
                         : rnd > 0.1 ? new Taxi { Fares = 42 } : null!;
 
 
+            var repo = "https://github.com/dmorosinotto/XE_dotNETConf_HotTopics_CSharp9";
+            var ch = repo[new Random().Next(repo.Length)];
+
             Console.WriteLine($"{rnd} -> {v}");
             var c = new TollCalculator();
             Console.WriteLine($"TOLL {v} -> {c.CalculateToll(v)}");
+            Console.WriteLine($"{ch} -> { IsLetterOrSeparator(ch)}");
             try
             { //? ESEMPI PIU' CONCRETI / BASICI DI UTILIZZO PATTERN MATCH + CONTROL FLOW ANALYSI
                 if (!(v is not null)) throw new ArgumentNullException("EQUIVALE AL VECCHIO v == null");
@@ -38,7 +42,8 @@ namespace csharp9.Test_PatternMatch
             }
         }
 
-
+        public static bool IsLetterOrSeparator(this char c) =>
+            c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z') or '.' or ',';
     }
 
     public class TollCalculator
