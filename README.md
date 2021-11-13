@@ -2,7 +2,7 @@
 
 XE dotNETConf HotTopics - C# 10 - Session 12-11-2021
 
-Added a .NET Interactive [notebook](CSharp10.dib) to demonstrate new features of C# 10 for my [XE](https://www.xedotnet.org/) online session about [dotNETConf 2021 HotTopics](https://www.xedotnet.org/eventi/dotnet-conf-2021-hot-topics/)
+Added a .NET Interactive [notebook](CSharp10.dib) to demonstrate new features of C# 10 for my [XE](https://www.xedotnet.org/) online session about [dotNETConf 2021 HotTopics](https://www.xedotnet.org/eventi/dotnet-conf-2021-hot-topics/) to try it you must install [.NET 6](https://dotnet.microsoft.com/download) + **.NET Interactive** [extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
 # XE_dotNETConf_HotTopics_CSharp9
 
