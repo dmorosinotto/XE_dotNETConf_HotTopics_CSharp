@@ -1,3 +1,9 @@
+# XE_dotNETConf_HotTopics_CSharp10
+
+XE dotNETConf HotTopics - C# 10 - Session 12-11-2021
+
+Added a .NET Interactive [notebook](CSharp10.dib) to demonstrate new features of C# 10 for my [XE](https://www.xedotnet.org/) online session about [dotNETConf 2021 HotTopics](https://www.xedotnet.org/eventi/dotnet-conf-2021-hot-topics/)
+
 # XE_dotNETConf_HotTopics_CSharp9
 
 XE dotNETConf HotTopics - C# 9 - Session 13-11-2020
