@@ -1,0 +1,199 @@
+#!markdown
+
+# C# 10 What's New!
+**XE dotNET Conf 2021 Hot Topics** - 12/11/2021 - by _Daniele Morosinotto_
+
+#!csharp
+
+#!about
+global using System;
+global using static System.Console;
+global using Env = System.Environment;
+
+//namespace XE.FileScoped;
+
+Write("C# 10 running on .NET ");
+WriteLine(Env.Version);
+#!time
+
+#!markdown
+
+---
+
+## record class / struct + 
+- **with-expression everywhere**: record, _struct & anonymous-type_
+
+#!csharp
+
+var andrea = new Person /*remove Person to try with-expression for anonymous type*/
+{
+    Nome = "Andrea",
+    Cognome = "Agnoletto"
+};
+
+var dottor = andrea with { Cognome = "Dottor" };
+
+WriteLine($"andrea={andrea}");
+WriteLine($"dottor={dottor}");
+
+var tesoriere = dottor with { Cognome = "Agnoletto" };
+WriteLine($"tesoriere={tesoriere}");
+WriteLine($"Equals: {object.Equals(andrea, tesoriere)}");
+WriteLine($"== operator: {andrea == tesoriere}"); //NOT FOR anonymous type AND struct
+WriteLine($"RerenceEquals: {object.ReferenceEquals(andrea, tesoriere)}"); // FALSE!!!
+
+record /*class struct */ Person {
+    public string Nome { get; init; }
+    public string Cognome {get; init; }
+    
+    public void WriteToFile(string filePath) => System.IO.File.WriteAllText(filePath, ToString());
+}
+
+#!markdown
+
+---
+
+## modernize struct
+- default ctor 
+- initializer
+
+#!csharp
+
+using System.Text.Json;
+
+SPerson p1 = default;
+SPerson p2 = new();
+WriteLine($"default={JsonSerializer.Serialize(p1)}");
+WriteLine($"ctor={JsonSerializer.Serialize(p2)}");
+var p3 = p2 with { Cognome = "XYZ" };
+WriteLine($"with={JsonSerializer.Serialize(p3)}");
+
+struct SPerson {
+    /*ctor*/
+    // public SPerson() {
+    //     // Nome = "Marco";
+    //     // Cognome = "Bortolin";
+    // }
+
+    public string Nome { get; init; } //= "Zio";
+    public string Cognome {get; set; } //="Paperone";
+}
+
+#!markdown
+
+---
+
+## record struct 
+- shorthand syntax
+- mutable / readonly
+
+#!csharp
+
+/* readonly */ record struct Presidente(string Nome, string Cognome);
+
+var attuale = new Presidente{ Nome = "Davide" };
+
+WriteLine(attuale);
+/* mutable */
+attuale.Cognome = "Contin";
+/* immutable with readonly */
+var prossimo = attuale with { Cognome = "Contin" }; 
+
+WriteLine(attuale);
+WriteLine(prossimo);
+
+#!markdown
+
+---
+
+## lambda
+- natural type inference
+- return type / widening
+- method groups
+
+#!csharp
+
+/* natural type inference */
+var lambda = (string s) => int.Parse(s); //ERA ERRORE IN C#9 SE NON ESPLICITAVAVO Expression<Func<string, int>>
+#nullable enable
+var infer = async (string? s, bool b) => (b || s is null) ? "123" : await Task.FromResult(s);
+
+/* return type */
+var union = [Obsolete] object (bool b) => b ? 1 : "two"; //Func<bool, object> 
+
+/* method group */
+internal class MethodGroups {
+    public MethodGroups(){
+        var read = Console.Read; //Func<int>
+        Action<string> write = Console.Write; //ERROR var 16+ overloads!!!
+    }
+}
+
+#!markdown
+
+---
+
+## extras
+- mixed var destructuring
+- optimize interpolated string
+
+#!csharp
+
+record struct Mirco(int Age, int Answer);
+var imperatore = new Mirco() { Answer=42 } with { Age = int.MaxValue};
+
+int x1;
+int y1;
+(x1, y1) = imperatore;       // Works in C# 9
+var (x, y) = imperatore;     // Works in C# 9
+/* mixed destructuring */
+(x1, var y2) = imperatore;   // Works in C# 10 onwards
+Console.WriteLine(InterpolatedStringHandlers.BuildingString($"{imperatore} -> {x},{y}  {x1},{y1}  {x1},{y2}"));
+#!time
+
+internal class InterpolatedStringHandlers {
+    public static string BuildingString(object mirco) {
+        var sb = new System.Text.StringBuilder();
+        sb.Append($"Problemi di allocazione!? - per dubbi chiedere a {mirco}!!!"); // I USE IT !!!
+        DebugAssert(true); // OPTIMIZATION ...
+        return sb.ToString();
+    } 
+    
+    public static void DebugAssert(bool condition) {
+        System.Diagnostics.Debug.Assert(condition, $"C# 10 DON'T RUN {HavyComputation()} IF true");
+    }
+    
+    /* constant interpolated strings */
+    const string WORLD = "world";
+    const string Message = $"Hello {WORLD} - YES IT'S A VALID const!";
+    [Obsolete($"This is never called, if you pass true to {nameof(DebugAssert)} - YES IT'S VALID const!")]
+    internal static double HavyComputation() {
+        Console.WriteLine("Start havy computation...");
+        double res = 456.789;
+        for(var i=1; i<int.MaxValue; i++) {
+            res += (float)i * 1.23/res;
+        }
+        return res;
+    }
+}
+
+#!markdown
+
+---
+
+## reference
+- [Article](https://devblogs.microsoft.com/dotnet/welcome-to-csharp-10/): Welcome to C# 10
+- Official [Docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10): What's new in C# 10
+- [Video](https://youtu.be/dfzBMxXQUOc): Mads Torgersen dotNet Conf 2021
+- [Podcast](https://nodogmapodcast.bryanhogan.net/158-mads-torgersen-c-10-part-2-listener-questions/): Future of C# 11 😜 , or maybe C# 12 **role and shape** 🤯 
+- [Preview](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/): 
+**static abstract members in interfaces** -> _Generic Math_ 🤓
+- [Tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/interpolated-string-handler): Custom **interpolated string handler** 🧐  
+
+---
+
+## contacts: 
+### Daniele Morosinotto ( _JavaScript Enthusiast_ )
+### Twitter: @dmorosinotto | Email: d.morosinotto@icloud.com
+![Me](https://www.xedotnet.org/media/1032/morosinotto_foto.jpg?height=300) 
+### with { ♥️ } from [XE](https://www.xedotnet.org/soci/) - _THANKS to all direttivo_ **friends!** 🍻 
