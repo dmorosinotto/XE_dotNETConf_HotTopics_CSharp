@@ -1,6 +1,6 @@
 namespace CSharp11;
 using System.Numerics;
-class EX3_Total_ok2
+class EX3_Match_ok2
 {
     public void Run()
     {

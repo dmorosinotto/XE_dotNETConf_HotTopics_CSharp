@@ -1,6 +1,6 @@
 namespace CSharp11;
 using System.Numerics;
-class EX3_Total_mid2
+class EX3_Match_mid1
 {
     public void Run()
     {
@@ -14,7 +14,7 @@ class EX3_Total_mid2
     {
         [] => T.Zero,
         [var first] => first,
+        [var first, var second] => first + second,
         [var first, .. var middle, var last] => first + last + Total(middle),
-        // [var first, var second] => first + second, //ERROR already handled
     };
 }

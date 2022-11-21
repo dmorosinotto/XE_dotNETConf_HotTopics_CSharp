@@ -5,4 +5,4 @@ new CSharp11.EX1_Person().Run();
 new CSharp11.EX2_Total().Run();
 new CSharp11.EX2_Average().Run();
 new CSharp11.EX2_Point().Run();
-new CSharp11.EX3_Total().Run();
+new CSharp11.EX3_Match().Run();

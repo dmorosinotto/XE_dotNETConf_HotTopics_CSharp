@@ -7,7 +7,7 @@ class EX0_Json_ok
         "message": "XE .NET Conf {{year}} Hot Topics",
         "speaker": {
             "name": "Daniele Morosinotto",
-            "dev": ['TS','JS',"{{lang}}]"]
+            "dev": ['TS','JS',"{{lang}}"]
         }
         "level": 101
     }
