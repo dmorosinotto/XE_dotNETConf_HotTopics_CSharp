@@ -1,0 +1,13 @@
+﻿Console.Clear();
+Console.WriteLine("Welcome to C# 12");
+new CSharp12.EX0_TypeAlias_init().Run();
+new CSharp12.EX0_TypeAlias_mid().Run();
+new CSharp12.EX0_TypeAlias_ok().Run();
+new CSharp12.EX1_PrimaryCtor_init().Run();
+new CSharp12.EX1_PrimaryCtor_mid().Run();
+new CSharp12.EX1_PrimaryCtor_ok().Run();
+new CSharp12.EX2_CollectionLiteral_init().Run();
+new CSharp12.EX2_CollectionLiteral_mid().Run();
+new CSharp12.EX2_CollectionLiteral_ok1().Run();
+new CSharp12.EX2_CollectionLiteral_ok2().Run();
+// new CSharp12.EX2_CollectionLiteral_okN().Run();
