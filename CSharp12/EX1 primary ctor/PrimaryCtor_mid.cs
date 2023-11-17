@@ -1,26 +1,31 @@
 namespace CSharp12;
 using Grade = decimal;
+using Skill = (string lang, decimal lvl);
 
-class EX1_PrimaryCtor_mid
-
+class EX1_PrimaryCtor_mid : ISample
 {
-    public void Run()
+    public class Developer(string name, int id, Skill[] Langs) //PRIMARY CTOR
     {
-        var mads = new Student("Mads Torgersen", 900751, new[] { 3.5m, 2.9m, 1.8m });
-        Console.WriteLine(mads.GetType().FullName);
-        Console.WriteLine(mads.GPA);
-        Console.WriteLine(mads.Name);
-    }
-    public class Student(string name, int id, Grade[] Grades)
-    {
-        public string Name { get; set; } = name;
-        public int Id => id;
-        public Student(string name, int id) : this(name, id, Array.Empty<Grade>()) { } //call primary ctor
-        public decimal GPA => Grades switch
+        public string Name { get; set; } = name; //PROPERTY INITIALIZER WITH PRIMARY CTOR PARAMS
+        public int Id => id; //CLOSURE TO PRIMARY CTOR PARAMS (READONLY)
+        Grade[] grades => Langs.Select(l => l.lvl).ToArray(); //CLOSURE TO PARAM Langs NO Langs PROPERTY EXPOSED BY class
+        public Grade Level => grades switch
         {
-        [] => 4.0m,
+        [] => 4.2m,
         [var grade] => grade,
         [.. var all] => all.Average()
         };
+    }
+    public void Run()
+    {
+        var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01m), (lang: "JS", lvl: 2.02m), (lang: "TS", lvl: 3.00m) });
+        Console.WriteLine(my);
+        Console.WriteLine(my.GetType().FullName);
+        Console.WriteLine($"- Id: {my.Id}");
+        //my.Id = 123; //ERROR READONLY PROPERTY
+        my.Name = "Daniele Morosinotto"; //WORKS
+        Console.WriteLine($"- Name: {my.Name}");
+        //Console.Write(my.Langs) //ERROR NO Langs PROPERTY EXPOSED BY class
+        Console.WriteLine($"- Level: {my.Level}");
     }
 }

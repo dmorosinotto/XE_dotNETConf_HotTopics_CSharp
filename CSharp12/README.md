@@ -4,10 +4,11 @@ Before try any samples about the **New C# 12 Features** you must install [.NET 8
 
 ## Reference C# 12
 
-- [VIDEO](https://www.youtube.com/watch?v=hq6uEaMYf5U) Mads & Dustin @Build
+- [VIDEO](https://www.youtube.com/watch?v=hq6uEaMYf5U) Mads & Dustin presenting C# 12 @Build
+- [VIDEO](https://www.youtube.com/watch?v=gGzfAJwoH5A&t=2s) Mads @DevFest 2023 - What’s Next in C#?
+- [VIDEO](https://www.youtube.com/watch?v=rp1iX26T_LE) Mads & Kathleen talking about Future of C# 13+
 - [VIDEO](https://youtu.be/pX1mj-DRDT4?si=Tka7jVkKPgBiMXhR) Shown Coding Shorts: C# 12 Preview Features
-- [DOCS](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12) What's NEW in C#12
-- [BLOG](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8) What's NEW in .NET 8
+- [DOCS](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12) What's NEW in C# 12
 - [WIKI](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) C# Feature Status
 - [REPO](https://github.com/dotnet/csharplang) C# compliler source & meeting notes
 

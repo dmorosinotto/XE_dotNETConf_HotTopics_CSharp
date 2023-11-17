@@ -87,8 +87,9 @@ If you need more details about C#11 take a look at:
 
 If you need more details about C#12 take a look at:
 
-- Official C# 12 What's new [docs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)
-- Great @MadsTorgersen talk at Build: What’s new in C# 12 and beyond [video](https://www.youtube.com/watch?v=hq6uEaMYf5U)
+- Annunciong: Official release C# 12 [article](https://devblogs.microsoft.com/dotnet/announcing-csharp-12/)
+- @MadsTorgersen talk at .NETConf about: What’s new in C# 12 [video](https://youtu.be/by-GL-SjHdc?si=_V8igad9gUpOFzmo)
 - Tutorial exploring [primary constructor](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/primary-constructors)
 - Docs about [collection expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/collection-expressions)
 - Docs about [using alias type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-12.0/using-alias-types)
+- [Other](CSharp12/README.md#reference-c-12) Resources & Videos about C# 12 and beyond...

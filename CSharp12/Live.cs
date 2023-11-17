@@ -2,7 +2,7 @@ namespace CSharp12;
 using Grade = System.Decimal; //ALIAS TYPE REQUIRED FULLTYPE NAME FOR .NET7 <= C#11 NOT ALLOW decimal !!
 using Skill = ValueTuple<string, decimal>; //MUST DEFINE TUPLE WITHOUT NAMES, BUT YOU CAN USE deciaml 🙃
 
-class EX0_TypeAlias_init : ISample
+class Live : ISample
 {
     public record struct Developer(string Name, int Id, Skill[] Langs)
     {
@@ -18,9 +18,7 @@ class EX0_TypeAlias_init : ISample
         var my = new Developer("Daniele", 200375, new[] { ("C#", 1.01m), ("JS", 2.02m), ("TS", 3.00m) });
         Console.WriteLine(my);
         Console.WriteLine(my.GetType().FullName);
-        //NOTICE THAT record struct AUTOMAGICALLY EXPOSE Id, Name AS WRITABLE PROPS
-        my.Id = 123;
-        my.Name = "Daniele Morosinotto";
+        //NOTICE THAT record struct AUTOMAGICALLY EXPOSE Id, Name PROPS
         Console.WriteLine($"- Id: {my.Id}");
         Console.WriteLine($"- Name: {my.Name}");
         Console.WriteLine($"- Level: {my.Level()}"); //OUR METHOD CALL

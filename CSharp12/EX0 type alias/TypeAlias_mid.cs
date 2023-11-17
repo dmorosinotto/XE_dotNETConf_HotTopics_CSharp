@@ -1,23 +1,28 @@
 namespace CSharp12;
-using Grade = decimal;
-using Pair = ValueTuple<int, int>;
+using Grade = decimal; //WITH C#12 YOU CAN USE IT!!
+using Skill = ValueTuple<string, decimal>; //EVEN HERE
 
-class EX0_TypeAlias_mid
+class EX0_TypeAlias_mid : ISample
 {
+    public record class Developer(string Name, int Id, Skill[] Langs)
+    {
+        public Grade Level()
+        { //REFACTOR CODE TO USE Grade CHECK INFERRED TYPE 👀
+            var grades = Langs.Select(l => l.Item2).ToArray();
+            if (grades.Length == 0) return 4.2m;
+            if (grades.Length == 1) return Langs[0].Item2;
+            else return grades.Average();
+        }
+    }
     public void Run()
     {
-        var mads = new Student("Mads Torgersen", 900751, new[] { 3.5m, 2.9m, 1.8m });
-        Console.WriteLine(mads.GetType().FullName);
-        Console.WriteLine(mads);
-    }
-    public record class Student(string Name, int Id, Grade[] Grades)
-    {
-        public Student(string name, int id) : this(name, id, Array.Empty<Grade>()) { }
-        public decimal GPA => Grades switch
-        {
-        [] => 4.0m,
-        [var grade] => grade,
-        [.. var all] => all.Average()
-        };
+        var my = new Developer("Daniele", 200375, new[] { ("C#", 1.01m), ("JS", 2.02m), ("TS", 3.00m) });
+        Console.WriteLine(my);
+        Console.WriteLine(my.GetType().FullName);
+        //NOTICE THAT record class AUTOMAGICALLY EXPOSE Id, Name AS READONLY PROPS
+        //my.Name = "Daniele Morosinotto"; //ERROR IT'S init readonly PROP //💥
+        Console.WriteLine($"- Id: {my.Id}");
+        Console.WriteLine($"- Name: {my.Name}");
+        Console.WriteLine($"- Level: {my.Level()}"); //CALL OUR METHOD
     }
 }

@@ -1,23 +1,27 @@
 namespace CSharp12;
 using Grade = decimal;
+using Skill = (string lang, decimal lvl);
 
-class EX1_PrimaryCtor_init
+class EX1_PrimaryCtor_init : ISample
 {
-    public void Run()
+    public class Developer(string Name, int Id, Skill[] Langs) //PRIMARY CTOR FOR class !!
     {
-        var mads = new Student("Mads Torgersen", 900751, new[] { 3.5m, 2.9m, 1.8m });
-        Console.WriteLine(mads.GetType().FullName);
-        Console.WriteLine(mads.Name);
-        Console.WriteLine(mads.GPA);
-    }
-    public record class Student(string Name, int Id, Grade[] Grades)
-    {
-        public Student(string name, int id) : this(name, id, Array.Empty<Grade>()) { }
-        public decimal GPA => Grades switch
+        Grade[] grades => Langs.Select(l => l.lvl).ToArray();
+        public Grade Level => grades switch
         {
-        [] => 4.0m,
+        [] => 4.2m,
         [var grade] => grade,
         [.. var all] => all.Average()
         };
+    }
+    public void Run()
+    {
+        var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01m), (lang: "JS", lvl: 2.02m), (lang: "TS", lvl: 3.00m) });
+        Console.WriteLine(my);
+        Console.WriteLine(my.GetType().FullName);
+        //ERROR NO AUTOMATIC Id, Name PROPERTY EXPOSED BY class THEY ARE PRIMARY CTOR PARAMS (DIFF FROM record!!)
+        //Console.WriteLine($"- Id: {my.Id}");      //💥
+        //Console.WriteLine($"- Name: {my.Name}");  //💥
+        Console.WriteLine($"- Level: {my.Level}");
     }
 }

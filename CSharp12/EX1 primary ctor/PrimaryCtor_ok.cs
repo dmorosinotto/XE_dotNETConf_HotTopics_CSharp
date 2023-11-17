@@ -1,29 +1,38 @@
 namespace CSharp12;
 using Grade = decimal;
+using Skill = (string lang, decimal lvl);
 
-class EX1_PrimaryCtor_ok
+class EX1_PrimaryCtor_ok : ISample
 {
-    public void Run()
+    public class Person(string name)
     {
-        var mads = new Student("Mads Torgersen", 900751, new[] { 3.5m, 2.9m, 1.8m });
-        Console.WriteLine(mads.GetType().FullName);
-        Console.WriteLine(mads.GPA);
-        Console.WriteLine(mads.Name);
+        public string Name { get; set; } = name; //PROPERTY INITIALIZER WITH PRIMARY CTOR PARAMS
     }
-    public class Student(string name, int id, Grade[] Grades) : Person(name) //primary ctor -> call base ctor
+    public class Developer(string name, int id, Skill[] Langs) : Person(name) //PRIMARY CTOR -> CALL BASE CTOR
     {
-        public int Id => id;
-        public Student(string name, int id) : this(name, id, Array.Empty<Grade>()) { } //other ctor -> MUST call primary ctor
-        public decimal GPA => Grades switch
+        public int Id => id; //CLOSURE TO PRIMARY CTOR PARAMS (READONLY)
+        public Developer(string name, int id) : this(name, id, Array.Empty<Skill>()) { } //OTHER CTOR MUST CALL PRIMARY CTOR
+        Grade[] grades => Langs.Select(l => l.lvl).ToArray(); //CLOSURE TO PARAM Langs NO Langs PROPERTY EXPOSED BY class
+        public Grade Level => grades switch
         {
-        [] => 4.0m,
+        [] => 4.2m,
         [var grade] => grade,
         [.. var all] => all.Average()
         };
     }
 
-    public class Person(string name)
+
+    public void Run()
     {
-        public string Name { get; set; } = name;
+        var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01m), (lang: "JS", lvl: 2.02m), (lang: "TS", lvl: 3.00m) });
+        Console.WriteLine(my);
+        Console.WriteLine(my.GetType().FullName);
+        Console.WriteLine($"- Id: {my.Id}");
+        //my.Id = 123; //ERROR READONLY PROPERTY
+        my.Name = "Daniele Morosinotto"; //WORKS
+        Console.WriteLine($"- Name: {my.Name}");
+        Console.WriteLine($"- Level: {my.Level}");
+        var mirco = new Developer("Mirco", 261166);
+        Console.WriteLine($"{mirco.Name} - Skill: {mirco.Level} - 👴🏻: {mirco is Person}");
     }
 }

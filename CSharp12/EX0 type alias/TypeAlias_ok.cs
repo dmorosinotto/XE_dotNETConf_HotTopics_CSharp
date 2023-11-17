@@ -1,25 +1,29 @@
 namespace CSharp12;
 using Grade = decimal;
-using Pair = (int First, int Second);
-// #pragma warning disable '0227' //suppress warning CS0227 for unsafe code
-// using unsafe OnlyForMirco = decimal*; //unsafe require /unsafe compiler option
+using Skill = (string lang, decimal lvl); //TYPE ALIAS WORKS EVEN FOR NAMED TUPLES
+//using unsafe ONLYMIRCO = int*; //AND EVEN POINTER (IN unsafe CONTEXT ASK MIRCO!)
 
-class EX0_TypeAlias_ok
+class EX0_TypeAlias_ok : ISample
 {
-    public void Run()
-    {
-        var mads = new Student("Mads Torgersen", 900751, new[] { 3.5m, 2.9m, 1.8m });
-        Console.WriteLine(mads.GetType().FullName);
-        Console.WriteLine(mads);
-    }
-    public record class Student(string Name, int Id, Grade[] Grades)
-    {
-        public Student(string name, int id) : this(name, id, Array.Empty<Grade>()) { }
-        public decimal GPA => Grades switch
-        {
-        [] => 4.0m,
+    public record Developer(string Name, int Id, Skill[] Langs)
+    {   //EXTRACT grades JUST TO SHOW Grade[] USE + AVOID LAMBDA MADNESS ^_^
+        Grade[] grades => Langs.Select(l => l.lvl).ToArray();
+        public Grade Level => grades switch //YOU CAN INLINE IF YOU WISH ^_^
+        { //REFACTOR CODE AS readonly GETTER USING PATTERN MATCHING & LAMBDA
+        [] => 4.2m,
         [var grade] => grade,
         [.. var all] => all.Average()
         };
+    }
+    public void Run()
+    {
+        var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01m), (lang: "JS", lvl: 2.02m), (lang: "TS", lvl: 3.00m) });
+        Console.WriteLine(my);
+        Console.WriteLine(my.GetType().FullName);
+        //NOTICE THAT record AUTOMAGICALLY EXPOSE Id, Name AS init,readonly PROPS
+        my = my with { Id = 123 }; //record ARE IMMUTABLE YOU CAN USE with -> 🆕!!
+        Console.WriteLine($"- Id: {my.Id}");
+        Console.WriteLine($"- Name: {my.Name}");
+        Console.WriteLine($"- Level: {my.Level}"); //CALL THE NEW GETTER
     }
 }
