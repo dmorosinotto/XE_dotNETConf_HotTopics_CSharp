@@ -13,6 +13,8 @@ run(new CSharp12.Live());
 run(new CSharp12.LiveColl());
 // run(new CSharp12.EX2_CollectionExpr_all());
 // run(new CSharp12.EX2_CollectionExpr_aok());
+run(new CSharp12.Extra_DU_ValidEmail());
+run(new CSharp12.Extra_DU_Union());
 
 void run(ISample sample)
 {
