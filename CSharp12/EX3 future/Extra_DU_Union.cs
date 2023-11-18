@@ -1,7 +1,6 @@
 namespace CSharp12;
-using IActionResult = Action;
+using IActionResult = Action; // ()=>void
 using Invalid = (object, string err);
-using System;
 using OneOf;
 //READ DOCS: https://github.com/mcintyre321/OneOf
 
@@ -69,7 +68,7 @@ class Extra_DU_Union : ISample
         ConsoleColor col = code switch
         {
             200 => ConsoleColor.Green,
-            404 => ConsoleColor.Yellow,
+            404 => ConsoleColor.Magenta,
             _ => ConsoleColor.Red,
         };
         return () =>

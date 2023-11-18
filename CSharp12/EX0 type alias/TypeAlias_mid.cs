@@ -10,7 +10,7 @@ class EX0_TypeAlias_mid : ISample
         { //REFACTOR CODE TO USE Grade CHECK INFERRED TYPE 👀
             var grades = Langs.Select(l => l.Item2).ToArray();
             if (grades.Length == 0) return 4.2m;
-            if (grades.Length == 1) return Langs[0].Item2;
+            if (grades.Length == 1) return grades[0];
             else return grades.Average();
         }
     }

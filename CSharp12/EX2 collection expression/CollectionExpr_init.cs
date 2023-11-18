@@ -20,8 +20,6 @@ class EX2_CollectionExpr_init : ISample
         [.. var all] => all.Average()
         };
     }
-
-
     public void Run()
     {
         var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01), (lang: "JS", lvl: 2.02), (lang: "TS", lvl: 3.00) });

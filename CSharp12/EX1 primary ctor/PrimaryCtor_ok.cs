@@ -20,8 +20,6 @@ class EX1_PrimaryCtor_ok : ISample
         [.. var all] => all.Average()
         };
     }
-
-
     public void Run()
     {
         var my = new Developer("Daniele", 200375, new[] { (lang: "C#", lvl: 1.01m), (lang: "JS", lvl: 2.02m), (lang: "TS", lvl: 3.00m) });

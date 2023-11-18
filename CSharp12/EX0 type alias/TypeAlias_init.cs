@@ -1,6 +1,6 @@
 namespace CSharp12;
 using Grade = System.Decimal; //ALIAS TYPE REQUIRED FULLTYPE NAME FOR .NET7 <= C#11 NOT ALLOW decimal !!
-using Skill = ValueTuple<string, decimal>; //MUST DEFINE TUPLE WITHOUT NAMES, BUT YOU CAN USE deciaml 🙃
+using Skill = ValueTuple<string, System.Decimal>; //MUST DEFINE TUPLE WITHOUT NAMES, BUT YOU CAN USE deciaml 🙃
 
 class EX0_TypeAlias_init : ISample
 {
@@ -23,6 +23,6 @@ class EX0_TypeAlias_init : ISample
         my.Name = "Daniele Morosinotto";
         Console.WriteLine($"- Id: {my.Id}");
         Console.WriteLine($"- Name: {my.Name}");
-        Console.WriteLine($"- Level: {my.Level()}"); //OUR METHOD CALL
+        Console.WriteLine($"- Level: {my.Level()}"); //CALL OUR METHOD
     }
 }

@@ -20,8 +20,8 @@ class EX1_PrimaryCtor_init : ISample
         Console.WriteLine(my);
         Console.WriteLine(my.GetType().FullName);
         //ERROR NO AUTOMATIC Id, Name PROPERTY EXPOSED BY class THEY ARE PRIMARY CTOR PARAMS (DIFF FROM record!!)
-        //Console.WriteLine($"- Id: {my.Id}");      //💥
-        //Console.WriteLine($"- Name: {my.Name}");  //💥
+        // Console.WriteLine($"- Id: {my.Id}");     //💥
+        // Console.WriteLine($"- Name: {my.Name}"); //💥
         Console.WriteLine($"- Level: {my.Level}");
     }
 }

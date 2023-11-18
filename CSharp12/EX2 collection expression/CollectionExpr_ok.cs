@@ -20,7 +20,6 @@ class EX2_CollectionExpr_ok : ISample
         [.. var all] => all.Average()
         };
     }
-
     public void Run()
     {
         var my = new Developer("Daniele", 200375, [("C#", 1.01), ("JS", 2.02), ("TS", 3.00)]); //INIT COLLECTION EXPRESSION
@@ -33,5 +32,4 @@ class EX2_CollectionExpr_ok : ISample
         var mirco = new Developer("Mirco", 261166, [(lang: "C#", lvl: 101.3), .. XE.Imperatore]); //SPRED COLLECTION EXPRESSION
         Console.WriteLine($"{mirco.Name} - Skill: {mirco.Level} - 👴🏻: {mirco is Person}");
     }
-
 }

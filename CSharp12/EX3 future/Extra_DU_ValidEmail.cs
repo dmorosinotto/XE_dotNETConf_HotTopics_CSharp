@@ -1,6 +1,4 @@
 namespace CSharp12;
-
-using System.Drawing;
 using ValueOf;
 //READ DOCS: https://github.com/mcintyre321/valueof
 
@@ -14,7 +12,7 @@ class Extra_DU_ValidEmail : ISample
         try
         {
             ValidatedEmail fail = ValidatedEmail.From("this is not an email");
-            SendMail(fail, "NEVER ARRIVE HERE!!!", ConsoleColor.Yellow);
+            SendMail(fail, "NEVER ARRIVE HERE!!!", ConsoleColor.Magenta);
         }
         catch (Exception ex)
         {
