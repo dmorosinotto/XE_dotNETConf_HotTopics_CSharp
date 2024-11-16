@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Mac\\Home\\Downloads\\CSharp13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX4 others\\EscapeSequence_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX4 others\\EscapeSequence_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX3 field keyword\\FieldKeyword_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX3 field keyword\\FieldKeyword_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX3 field keyword\\FieldKeyword_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\Live2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Live2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\Live1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Live1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX0 params collection\\ParamsCollection_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX1 lock object\\LockObject_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX1 lock object\\LockObject_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX1 lock object\\LockObject_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\CSharp13.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSharp13.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX0 params collection\\ParamsCollection_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EX0 params collection\\ParamsCollection_mid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Downloads\\CSharp13\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EscapeSequence_ok.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX4 others\\EscapeSequence_ok.cs",
+              "RelativeDocumentMoniker": "EX4 others\\EscapeSequence_ok.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX4 others\\EscapeSequence_ok.cs",
+              "RelativeToolTip": "EX4 others\\EscapeSequence_ok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:24:09.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FieldKeyword_ok.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_ok.cs",
+              "RelativeDocumentMoniker": "EX3 field keyword\\FieldKeyword_ok.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_ok.cs",
+              "RelativeToolTip": "EX3 field keyword\\FieldKeyword_ok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:22:28.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FieldKeyword_mid.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_mid.cs",
+              "RelativeDocumentMoniker": "EX3 field keyword\\FieldKeyword_mid.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_mid.cs",
+              "RelativeToolTip": "EX3 field keyword\\FieldKeyword_mid.cs",
+              "ViewState": "AgIAAAoAAABg+////78swAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:22:15.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FieldKeyword_init.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_init.cs",
+              "RelativeDocumentMoniker": "EX3 field keyword\\FieldKeyword_init.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX3 field keyword\\FieldKeyword_init.cs",
+              "RelativeToolTip": "EX3 field keyword\\FieldKeyword_init.cs",
+              "ViewState": "AgIAAAkAAADAMDMzM7M0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:22:04.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LockObject_ok.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_ok.cs",
+              "RelativeDocumentMoniker": "EX1 lock object\\LockObject_ok.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_ok.cs",
+              "RelativeToolTip": "EX1 lock object\\LockObject_ok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:19:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LockObject_mid.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_mid.cs",
+              "RelativeDocumentMoniker": "EX1 lock object\\LockObject_mid.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_mid.cs",
+              "RelativeToolTip": "EX1 lock object\\LockObject_mid.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:19:03.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CSharp13.csproj",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\CSharp13.csproj",
+              "RelativeDocumentMoniker": "CSharp13.csproj",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\CSharp13.csproj",
+              "RelativeToolTip": "CSharp13.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-16T03:18:08.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LockObject_init.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_init.cs",
+              "RelativeDocumentMoniker": "EX1 lock object\\LockObject_init.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX1 lock object\\LockObject_init.cs",
+              "RelativeToolTip": "EX1 lock object\\LockObject_init.cs",
+              "ViewState": "AgIAAAwAAABgAAAAAMAswBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:15:12.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Live2.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\Live2.cs",
+              "RelativeDocumentMoniker": "Live2.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\Live2.cs",
+              "RelativeToolTip": "Live2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:03:41.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Live1.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\Live1.cs",
+              "RelativeDocumentMoniker": "Live1.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\Live1.cs",
+              "RelativeToolTip": "Live1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T01:58:12.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ParamsCollection_init.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_init.cs",
+              "RelativeDocumentMoniker": "EX0 params collection\\ParamsCollection_init.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_init.cs",
+              "RelativeToolTip": "EX0 params collection\\ParamsCollection_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T01:57:48.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ParamsCollection_ok.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_ok.cs",
+              "RelativeDocumentMoniker": "EX0 params collection\\ParamsCollection_ok.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_ok.cs",
+              "RelativeToolTip": "EX0 params collection\\ParamsCollection_ok.cs",
+              "ViewState": "AgIAAAkAAADwy8zMzAwvwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:09:39.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T03:05:32.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ParamsCollection_mid.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_mid.cs",
+              "RelativeDocumentMoniker": "EX0 params collection\\ParamsCollection_mid.cs",
+              "ToolTip": "C:\\Mac\\Home\\Downloads\\CSharp13\\EX0 params collection\\ParamsCollection_mid.cs",
+              "RelativeToolTip": "EX0 params collection\\ParamsCollection_mid.cs",
+              "ViewState": "AgIAAAgAAAAgAAAAAEAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T01:58:00.462Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
