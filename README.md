@@ -1,3 +1,9 @@
+# XE_dotNETConf_2024_CSharp13
+
+XE .NETConf 2024 - C# 13 - Session 16-11-2024
+
+Added [samples](CSharp13) to demonstrate new features of C# 13 for my [XE](https://www.xedotnet.org/) session at [.NET Conf 2024 XE](https://www.xedotnet.org/eventi/net-conf-2024-xe/) to try it you must install [.NET 9](https://dotnet.microsoft.com/it-it/download/dotnet/9.0?cid=get-dotnet-9) + open a terminal in VSCode and run `dotnet watch` - you can test every single example modifing [Program.cs](CSharp13/Program.cs) if you want to follow the "live demo" you can check diff from files `XXX_init.cs -> XXX_mid.cs -> XXX_ok.cs` inside any single _EXn_ folder.
+
 # XE_dotNETConf_2023_CSharp12
 
 XE .NETConf 2023 - C# 12 - Session 18-11-2023
